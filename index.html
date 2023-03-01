@@ -24,11 +24,12 @@
             }
             html{
                 background: repeating-linear-gradient(
-                    45deg,
+                    -45deg,
                     #061BB0,
                     #7463e0
                 );
                 font-family: 'Ruda', sans-serif;
+                font-weight: 900;
             }
             header{
                 grid-area: header;
@@ -42,6 +43,10 @@
                 grid-area: navbar;
                 background-color: #FFFFFF;
                 height: fit-content;
+                padding: 5px 5px 5px 50px;
+            }
+            #nav-button{
+                padding: 5px;
             }
         </style>
     </head>
@@ -52,7 +57,13 @@
                 <img class="logo" src="visual site/logo.png" height="200px">
                 <p>ola teste</p>
             </header>
-            <nav> teste teste teste </nav>
+            <nav>
+                <a id="nav-button" href=""> Loja </a>
+                <a id="nav-button" href=""> Loja </a>
+                <a id="nav-button" href=""> Loja </a>
+                <a id="nav-button" href=""> Loja </a>
+                <a id="nav-button" href=""> Loja </a>
+            </nav>
             <div class="carrousel">
                 <img src="visual site/god-of-war-painel-em-lona-1-50x1m-decoracao-aniversario.jpg" width="100%">
             </div>
