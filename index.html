@@ -5,7 +5,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;900&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
-        <title>teste</title>
+        <title>Game Mania</title>
         <style>
             .product{grid-area: product;}
             .filters{grid-area: filters;}
@@ -13,11 +13,14 @@
             .carrousel{grid-area: carrousel;}
             .productArea{grid-area: productArea;}
             .grid-container{
-                grid-template-areas: 
+                grid-template-areas:
+                'header header header'
                 'navbar navbar navbar'
                 'carrousel carrousel carrousel'
                 'productArea productArea productArea'
                 ;
+                padding: 40px;
+                margin: 50px;
             }
             html{
                 background: repeating-linear-gradient(
@@ -27,13 +30,26 @@
                 );
                 font-family: 'Ruda', sans-serif;
             }
+            header{
+                grid-area: header;
+                display: inline-flex;
+                align-content: center;
+                align-self: center;
+            }
+            nav{
+                background-color: #FFFFFF;
+                height: fit-content;
+                width: 80%;
+            }
         </style>
     </head>
     <body>
-        <header>
-            <p>ola teste</p>
-        </header>
         <div class="grid-container">
+            <header>
+                <p> ola teste</p>
+                <img src="visual site/logo.png" height="200px">
+                <p>ola teste</p>
+            </header>
             <nav> teste teste teste </nav>
             <div id="carrousel">
 
