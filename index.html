@@ -7,20 +7,20 @@
         <meta charset="UTF-8">
         <title>Game Mania</title>
         <style>
-            .product{grid-area: product;}
             .filters{grid-area: filters;}
-            nav{grid-area: navbar;}
             .carrousel{grid-area: carrousel;}
             .productArea{grid-area: productArea;}
             .grid-container{
+                display: grid;
                 grid-template-areas:
                 'header header header'
                 'navbar navbar navbar'
                 'carrousel carrousel carrousel'
-                'productArea productArea productArea'
-                ;
-                padding: 40px;
-                margin: 50px;
+                'productArea productArea productArea';
+                padding: auto;
+                margin: auto;
+                width: 80%;
+                height: fit-content;
             }
             html{
                 background: repeating-linear-gradient(
@@ -33,13 +33,13 @@
             header{
                 grid-area: header;
                 display: inline-flex;
-                align-content: center;
-                align-self: center;
+                align-items: center;
+                width: auto;
             }
             nav{
+                grid-area: navbar;
                 background-color: #FFFFFF;
                 height: fit-content;
-                width: 80%;
             }
         </style>
     </head>
@@ -47,20 +47,20 @@
         <div class="grid-container">
             <header>
                 <p> ola teste</p>
-                <img src="visual site/logo.png" height="200px">
+                <img class="logo" src="visual site/logo.png" height="200px">
                 <p>ola teste</p>
             </header>
             <nav> teste teste teste </nav>
-            <div id="carrousel">
-
+            <div class="carrousel">
+                <img src="visual site/god-of-war-painel-em-lona-1-50x1m-decoracao-aniversario.jpg" width="100%">
             </div>
-            <div id="productArea">
+            <div class="productArea">
                 <div id="filters">
 
                 </div>
                 <div id="productGrid">
                     <div id="product">
-                        <img src="teclado Gamer.jpg" width="80" height="80" alt="" />
+                        <img src="imagens\Teclado-Gamer.jpg" width="80" height="80" alt="" />
                         <h2>Teclado Gamer Blue</h2>
                         <h3>R$499,99</h3>  </div>
                     <div id="product"> </div>
