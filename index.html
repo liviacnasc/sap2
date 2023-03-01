@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;900&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <title>teste</title>
         <style>
-
+            .product{grid-area: product;}
+            .filters{grid-area: filters;}
+            nav{grid-area: navbar;}
+            .carrousel{grid-area: carrousel;}
+            .productArea{grid-area: productArea;}
+            .grid-container{
+                grid-template-areas: 
+                'navbar navbar navbar'
+                'carrousel carrousel carrousel'
+                'productArea productArea productArea'
+                ;
+            }
+            html{
+                background: repeating-linear-gradient(
+                    45deg,
+                    #061BB0,
+                    #7463e0
+                );
+                font-family: 'Ruda', sans-serif;
+            }
         </style>
     </head>
     <body>
-        <header >
-
+        <header>
+            <p>ola teste</p>
         </header>
-        <p>teste</p>
-        <p>teste3</p>
+        <div class="grid-container">
+            <nav> teste teste teste </nav>
+            <div id="carrousel">
+
+            </div>
+            <div id="productArea">
+                <div id="filters">
+
+                </div>
+                <div id="productGrid">
+                    <div id="product"> </div>
+                    <div id="product"> </div>
+                    <div id="product"> </div>
+                    <div id="product"> </div>
+                    <div id="product"> </div>
+                </div>
+            </div>
+
+        </div>
+        
         <script src="C:\Users\aluno_sesi\Documents\Front-end\SAP 2\javascript\script.js"></script>
     </body>
 </html>
