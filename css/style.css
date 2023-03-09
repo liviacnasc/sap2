@@ -10,12 +10,26 @@ html{
 .col{
     grid-area: col;
 }
+.sidebar{
+    grid-area: sidebar;
+    background-color: #F2EDEB;
+    border-radius: 20px;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding: 10px;
+    color: #061BB0;
+}
 .grid-container{
     display: grid;
-    grid-template-areas:
-    'col col col';
+    grid-template-columns: 20% 24% 24% 24%;
     width: 100%;
     height: fit-content;
+    gap: 10px;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
 }
 header{
     display: flex;
@@ -54,4 +68,44 @@ nav{
 .logo{
     margin: auto;
     padding: auto;
+}
+.product{
+    background-color: #F2EDEB;
+    border-radius: 20px;
+}
+#product_01{
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+#product_02{
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+#product_03{
+    grid-row-start: 1;
+    grid-column-start: 4;
+}
+#product_04{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+#product_05{
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+#product_06{
+    grid-row-start: 2;
+    grid-column-start: 4;
+}
+#product_07{
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+#product_08{
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
+#product_09{
+    grid-row-start: 3;
+    grid-column-start: 4;
 }
