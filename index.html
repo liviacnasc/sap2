@@ -1,105 +1,112 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+=======
+<html lang="pt-br">
+>>>>>>> f17c6b1508d791ac960de0d062f9842514af6460
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;900&display=swap" rel="stylesheet">
+<<<<<<< HEAD
+=======
+        
+>>>>>>> f17c6b1508d791ac960de0d062f9842514af6460
         <title>Game Mania</title>
-        <style>
-            .filters{grid-area: filters;}
-            .carrousel{grid-area: carrousel;}
-            .productArea{grid-area: productArea;}
-            .grid-container{
-                display: grid;
-                grid-template-areas:
-                'header header header'
-                'navbar navbar navbar'
-                'carrousel carrousel carrousel'
-                'productArea productArea productArea';
-                padding: auto;
-                margin: auto;
-                width: 80%;
-                height: fit-content;
-            }
-            html{
-                background: repeating-linear-gradient(
-                    -45deg,
-                    #061BB0,
-                    #7463e0
-                );
-                font-family: 'Ruda', sans-serif;
-                font-weight: 900;
-            }
-            header{
-                grid-area: header;
-                display: inline-flex;
-                align-items: center;
-                width: auto;
-                margin: auto;
-                padding: auto;
-            }
-            nav{
-                display: inline;
-                grid-area: navbar;
-                background-color: #FFFFFF;
-                height: fit-content;
-                padding: 10px 10px 10px 50px;
-                border-radius: 10px 10px 0px 0px;
-            }
-            #nav-button:link, #nav-button:visited{
-                display: inline-block;
-                padding: 10px;
-                text-decoration: none;
-                text-align: center;
-                color: #061BB0;
-                transition-duration: 0.4s;
-            }
-            #nav-button:hover, #nav-button:active{
-                color: #7463e0;
-                text-decoration: none;
-            }
-        </style>
     </head>
     <body>
-        <div class="grid-container">
-            <header>
-                <p> ola teste</p>
-                <img class="logo" src="visual site/logo.png" height="200px">
-                <p>ola teste</p>
-            </header>
-            <nav>
-                <a id="nav-button" href=""> Loja </a>
-                <a id="nav-button" href=""> Consoles </a>
-                <a id="nav-button" href=""> Xbox </a>
-                <a id="nav-button" href=""> Playstation </a>
-                <a id="nav-button" href=""> Nintendo </a>
-                <a id="nav-button" href=""> Acessórios </a>
-                <a id="nav-button" href=""> Computadores </a>
-                <input type="text" id="pesquisa-input">
-            </nav>
-            <div class="carrousel">
-                <img src="visual site/god-of-war-painel-em-lona-1-50x1m-decoracao-aniversario.jpg" width="100%">
-            </div>
-            <div class="productArea">
-                <div id="filters">
-
-                </div>
-                <div id="productGrid">
-                    <div id="product">
-                        <img src="imagens\Teclado-Gamer.jpg" width="80" height="80" alt="" />
-                        <h2>Teclado Gamer Blue</h2>
-                        <h3>R$499,99</h3>  </div>
-                    <div id="product"> </div>
-                    <div id="product"> </div>
-                    <div id="product"> </div>
-                    <div id="product"> </div>
-                </div>
-            </div>
-
+        <header>
+            <span id="redes">
+                <a href=""><span class="fi-brands-instagram"></span></a>
+                <a href=""><span class="fi-brands-instagram"></span></a>
+            </span>
+            <span class="logo">
+                <img src="visual site/logo.png" style="height: 100px;">
+            </span>
+            <span id="cliente">
+                <a href="">Entrar</a>
+                <a href="">Cadastrar-se</a>
+            </span>
+        </header>
+        <nav>
+            <a id="nav-button" href=""> Loja </a>
+            <a id="nav-button" href=""> Consoles </a>
+            <a id="nav-button" href=""> Xbox </a>
+            <a id="nav-button" href=""> Playstation </a>
+            <a id="nav-button" href=""> Nintendo </a>
+            <a id="nav-button" href=""> Acessórios </a>
+            <a id="nav-button" href=""> Computadores </a>
+            <input type="text" id="pesquisa-input">
+        </nav>
+        <div class="carrousel">
+            <img src="visual site/god-of-war-painel-em-lona-1-50x1m-decoracao-aniversario.jpg" width="100%">
         </div>
-        
-        <script src="C:\Users\aluno_sesi\Documents\Front-end\SAP 2\javascript\script.js"></script>
+        <div class="grid-container">
+            <div class="sidebar">
+                <div>
+                    <h2>Categorias</h2>
+                </div>
+                <div>
+                    <p>teste 1</p>
+                </div>
+                <div>
+                    <p>teste 2</p>
+                </div>
+            </div>
+            <div class="product" id="product_01">
+                <img src="imagens\Teclado-Gamer.jpg" width="80px" height="80px" alt="" />
+                <h2>Teclado Gamer Blue</h2>
+                <h3>R$499,99</h3>
+            </div>
+            <div class="product" id="product_02">
+                <img src="imagens\Teclado-Gamer.jpg" width="80" height="80" alt="" />
+                <h2>Teclado Gamer Blue</h2>
+                <h3>R$499,99</h3>
+            </div>
+            <div class="product" id="product_03">
+                <img src="imagens\Teclado-Gamer.jpg" width="80" height="80" alt="" />
+                <h2>Teclado Gamer Blue</h2>
+                <h3>R$499,99</h3>
+            </div>
+            <div class="product" id="product_04">
+                <img src="imagens\Teclado-Gamer.jpg" width="80" height="80" alt="" />
+                <h2>Teclado Gamer Blue</h2>
+                <h3>R$499,99</h3>
+            </div>
+            <div class="product" id="product_05">
+                <img src="imagens\Teclado-Gamer.jpg" width="80" height="80" alt="" />
+                <h2>Teclado Gamer Blue</h2>
+                <h3>R$499,99</h3>
+            </div>
+            <div class="product" id="product_06">
+                <img src="imagens\Teclado-Gamer.jpg" width="80" height="80" alt="" />
+                <h2>Teclado Gamer Blue</h2>
+                <h3>R$499,99</h3>
+            </div>
+            <div class="product" id="product_07">
+                <img src="imagens\Teclado-Gamer.jpg" width="80" height="80" alt="" />
+                <h2>Teclado Gamer Blue</h2>
+                <h3>R$499,99</h3>
+            </div>
+            <div class="product" id="product_08">
+                <img src="imagens\Teclado-Gamer.jpg" width="80" height="80" alt="" />
+                <h2>Teclado Gamer Blue</h2>
+                <h3>R$499,99</h3>
+            </div>
+            <div class="product" id="product_09">
+                <img src="imagens\Teclado-Gamer.jpg" width="80" height="80" alt="" />
+                <h2>Teclado Gamer Blue</h2>
+                <h3>R$499,99</h3>
+            </div>
+        </div>
+        <script src="javascript\script.js"></script>
     </body>
 </html>

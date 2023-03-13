@@ -1,0 +1,111 @@
+html{
+    background: repeating-linear-gradient(
+        -45deg,
+        #061BB0,
+        #7463e0
+    );
+    font-family: 'Ruda', sans-serif;
+    font-weight: 900;
+}
+.col{
+    grid-area: col;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: #F2EDEB;
+    border-radius: 20px;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding: 10px;
+    color: #061BB0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 20% 24% 24% 24%;
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: auto;
+    margin: 20px;
+}
+nav{
+    background-color: #FFFFFF;
+    height: fit-content;
+    padding: 10px 10px 10px 50px;
+    border-radius: 10px 10px 0px 0px;
+}
+#nav-button:link, #nav-button:visited{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #061BB0;
+    transition-duration: 0.4s;
+}
+#nav-button:hover, #nav-button:active{
+    color: #7463e0;
+    text-decoration: none;
+}
+#redes{
+    width: 125.359px;
+    margin: auto;
+}
+#cliente{
+    margin: auto;
+    padding: auto;
+}
+.logo{
+    margin: auto;
+    padding: auto;
+}
+.product{
+    background-color: #F2EDEB;
+    border-radius: 20px;
+}
+#product_01{
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+#product_02{
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+#product_03{
+    grid-row-start: 1;
+    grid-column-start: 4;
+}
+#product_04{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+#product_05{
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+#product_06{
+    grid-row-start: 2;
+    grid-column-start: 4;
+}
+#product_07{
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+#product_08{
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
+#product_09{
+    grid-row-start: 3;
+    grid-column-start: 4;
+}
